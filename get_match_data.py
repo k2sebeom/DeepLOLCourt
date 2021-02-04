@@ -6,7 +6,8 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
 
-API_KEY = '{Your API Key}'
+with open('api_key.txt') as api_file:
+    API_KEY = api_file.read().strip()
 API_URL = 'https://kr.api.riotgames.com/lol'
 
 
