@@ -3,9 +3,9 @@ from torch.utils.data import Dataset
 
 
 class MatchDataset(Dataset):
-    def __init__(self):
+    def __init__(self, dataroot):
         self.matches = []
-        with open('lol_match_stat_and_result.csv', 'r', encoding='utf8') as match_file:
+        with open(dataroot, 'r', encoding='utf8') as match_file:
             self.matches = match_file.read().split('\n')[1:-1]
 
     def __len__(self):
