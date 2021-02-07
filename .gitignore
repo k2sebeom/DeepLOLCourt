@@ -203,3 +203,6 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 api_key.txt
+
+*.csv
+summoner_ids.txt
