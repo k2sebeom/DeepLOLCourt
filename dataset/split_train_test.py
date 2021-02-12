@@ -18,3 +18,4 @@ if __name__ == '__main__':
         f.write(header + '\n')
         for line in raw_data[split_idx:]:
             f.write(line + '\n')
+    print(f'Generated {split_idx} train instances')
