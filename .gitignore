@@ -207,3 +207,6 @@ checkpoints/*
 
 # Raw dataset
 dataset/*.csv
+
+# API_KEY
+api_key.txt

@@ -22,7 +22,8 @@ class MatchDataset(Dataset):
         features = np.concatenate([team_1, players_1, team_2, players_2])
         return {'y': result, 'x': features.astype('float32')}
 
-    def parse_data(self, data):
+    @staticmethod
+    def parse_data(data):
         row = data.split(',')
         blue_team = row[:6]
         blue_players = []
